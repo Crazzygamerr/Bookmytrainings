@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:Bookmytrainings/Utility/Banner_Model.dart';
 import 'package:Bookmytrainings/Utility/Booking_Model.dart';
 import 'package:Bookmytrainings/Utility/Payment_Model.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
