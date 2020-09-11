@@ -1,0 +1,75 @@
+name: Bookmytrainings
+description: A new Flutter project.
+
+version: 1.0.0+11
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_spinkit: ^4.1.2
+  flutter_screenutil: ^1.0.2
+  url_launcher: ^5.5.0
+  fluttertoast: ^4.0.0
+  image_picker: ^0.6.7+2
+  path_provider: ^1.6.11
+  shared_preferences: ^0.5.10
+  http: 0.12.1
+  cupertino_icons: ^0.1.2
+  intl: ^0.16.1
+  share: ^0.6.4+3
+  app_review: ^1.1.2
+  maps_launcher: ^1.2.0
+  firebase_core: ^0.5.0
+  firebase_auth: ^0.18.0+1
+  cloud_firestore: ^0.14.0+2
+  keyboard_avoider: ^0.1.2
+  pinput: ^0.2.4
+  carousel_slider: ^2.2.1
+  webview_flutter: ^0.3.22+1
+  flutter_inappwebview: ^4.0.0+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.7.5
+
+flutter_icons:
+  image_path: "Assets/LOGO/drawable-xhdpi/Logo1.png"
+  image_path_android: "Assets/LOGO/drawable-xhdpi/Logo1.png"
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - Assets/LOGO/drawable-xhdpi/Logo.png
+    - Assets/LOGO/drawable-xhdpi/Logo1.png
+    - Assets/LOGO/drawable-mdpi/mdpi_Logo.png
+    - Assets/SSLoading1.jpg
+    - Assets/SSBack.jpg
+    - Assets/User.png
+    - Assets/OnboardingBack/drawable-xhdpi/OnBack.png
+    - Assets/OnboardingBack/drawable-xhdpi/OnBack-op.png
+    - Assets/OnboardingBack/drawable-xhdpi/OnBack-op2.png
+    - Assets/OnboardingBack/drawable-xhdpi/OnBack-op3.png
+    - Assets/Onboarding1/drawable-xhdpi/OnImg1.png
+    - Assets/Onboarding2/drawable-xhdpi/OnImg2.png
+    - Assets/Onboarding3/drawable-xhdpi/OnImg3.png
+    - Assets/Onboarding4/drawable-xhdpi/OnImg4.png
+    - Assets/AppbarIcon1/drawable-xhdpi/transportation.png
+    - Assets/redAppbarIcon1/drawable-xhdpi/transportationRed.png
+    - Assets/AppbarIcon2/drawable-xhdpi/check.png
+    - Assets/AppbarIcon2/drawable-xhdpi/money.png
+    - Assets/redAppbarIcon2/drawable-xhdpi/checkRed.png
+    - Assets/redAppbarIcon3/drawable-xhdpi/moneyRed.png
+    - Assets/BlueCheck/drawable-xhdpi/check.png
+    - Assets/Creditcard/drawable-xhdpi/creditcard.png
+    - Assets/ChatLogo/drawable-xhdpi/ChatLogo.png
+    - Assets/Notification/drawable-xhdpi/NotificationLogo.png
+    - Assets/ThumbsUp/drawable-xhdpi/ThumbsUp.png
+
