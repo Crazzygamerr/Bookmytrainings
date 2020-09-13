@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:Bookmytrainings/Widgets/ScaffoldWidgets/UserProfile.dart';
-import 'package:Bookmytrainings/Widgets/UnderDev/Notifications.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
 

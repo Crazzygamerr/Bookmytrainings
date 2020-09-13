@@ -16,6 +16,7 @@ class AboutBMT extends StatefulWidget {
 class _AboutBMTState extends State<AboutBMT> with AutomaticKeepAliveClientMixin<AboutBMT> {
     @override
     Widget build(BuildContext context) {
+      super.build(context);
 
         ScreenUtil.init(context, width: 360, height: 640, allowFontScaling: true);
         return SingleChildScrollView(

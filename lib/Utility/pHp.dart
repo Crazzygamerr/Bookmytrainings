@@ -5,7 +5,7 @@ import 'package:Bookmytrainings/Utility/sharedPref.dart';
 import 'package:http/http.dart' as http;
 import 'dart:core';
 
-class pHp{
+class Php{
 
     SharedPref pref = new SharedPref();
 
@@ -70,7 +70,7 @@ class pHp{
         var map = Map<String,String>();
         map["email"] = s;
         final http.Response response = await http.post("https://www.bookmytrainings.com/app/getBookings.php", body: map);
-        List<BookingModel> bookings = [];
+        //List<BookingModel> bookings = [];
         //print(response.body);
         //print(json.decode(response.body));
         if(response.body != "zero" && response.body.isNotEmpty) {
@@ -118,7 +118,7 @@ class pHp{
             BookingModel bookingModel = new BookingModel();
             bookingModel.id = x[i]['id'];
 
-            bookingModel.booking_id = x[i]['b_id'];
+            bookingModel.bookingId = x[i]['b_id'];
 
             bookingModel.title = x[i]['name'];
 

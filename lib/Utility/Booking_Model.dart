@@ -2,7 +2,7 @@
 class BookingModel{
 
     String id;
-    String booking_id;
+    String bookingId;
     String title;
     String date1;
     String date2;

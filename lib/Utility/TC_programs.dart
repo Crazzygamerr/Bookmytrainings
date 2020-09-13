@@ -2,8 +2,10 @@ import 'dart:core';
 
 import 'package:flutter/material.dart';
 
-class TC_programs{
+// ignore: camel_case_types
+class TC_Programs{
 
+    // ignore: non_constant_identifier_names
     static List<Map<String,String>> SAFe = [
 
         {
@@ -48,7 +50,7 @@ class TC_programs{
 
     ];
 
-    static List<Map<String,String>> agile_scrum = [
+    static List<Map<String,String>> agileScrum = [
 
         {
             "name": "Agile & Scrum",
@@ -97,7 +99,7 @@ class TC_programs{
 
     ];
 
-    static List<Map<String,String>> ProcessMethod = [
+    static List<Map<String,String>> processMethod = [
 
         {
             "name": "Process Methodologies",
@@ -204,7 +206,7 @@ class TC_programs{
 
     ];
 
-    static List<Map<String,String>> Behavioral = [
+    static List<Map<String,String>> behavioral = [
 
         {
             "name": "Behavioral",
@@ -233,7 +235,7 @@ class TC_programs{
 
     ];
 
-    static List<Map<String,String>> Others = [
+    static List<Map<String,String>> others = [
 
         {
             "name": "Others",
@@ -257,7 +259,7 @@ class TC_programs{
 
     ];
 
-    List<Map> Programs = [
+    List<Map> programs = [
 
         {
             "pName": SAFe,
@@ -266,13 +268,13 @@ class TC_programs{
         },
 
         {
-            "pName": agile_scrum,
+            "pName": agileScrum,
             "color": Colors.purple,
             "color1": Colors.purpleAccent
         },
 
         {
-            "pName": ProcessMethod,
+            "pName": processMethod,
             "color": Colors.green,
             "color1": Colors.greenAccent
         },
@@ -290,13 +292,13 @@ class TC_programs{
         },
 
         {
-            "pName": Behavioral,
+            "pName": behavioral,
             "color": Colors.red,
             "color1": Colors.redAccent
         },
 
         {
-            "pName": Others,
+            "pName": others,
             "color": Colors.lightGreen,
             "color1": Colors.lightGreenAccent
         },

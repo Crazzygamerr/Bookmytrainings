@@ -12,7 +12,7 @@ class TopCategories extends StatefulWidget {
 
 class _TopCategoriesState extends State<TopCategories> {
 
-  TC_programs prog = new TC_programs();
+  TC_Programs prog = new TC_Programs();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class _TopCategoriesState extends State<TopCategories> {
           ),
         //color: Colors.blue,
         child: ListView.builder(
-            itemCount: prog.Programs.length,
+            itemCount: prog.programs.length,
             //physics: ClampingScrollPhysics(),
             padding: EdgeInsets.all(0),
             itemBuilder: (context, pos) {
@@ -39,10 +39,10 @@ class _TopCategoriesState extends State<TopCategories> {
                   width: ScreenUtil().setWidth(360),
                   child: ListView.builder(
                       padding: EdgeInsets.all(0),
-                      itemCount: prog.Programs[pos]['pName'].length,
+                      itemCount: prog.programs[pos]['pName'].length,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, pos1){
-                          List temp = prog.Programs[pos]['pName'];
+                          List temp = prog.programs[pos]['pName'];
                           return GestureDetector(
                             onTap: (){
                                 if(temp[pos1]['link'] != "")
@@ -62,7 +62,7 @@ class _TopCategoriesState extends State<TopCategories> {
                                   ),
                                   elevation: 2.5,
                                   //color: (pos1 == 0) ? prog.Programs[pos]['color'] : prog.Programs[pos]['color1'],
-                                  color: (pos1 == 0) ? prog.Programs[pos]['color'] : Colors.white,
+                                  color: (pos1 == 0) ? prog.programs[pos]['color'] : Colors.white,
                                   child: Container(
                                       width: ScreenUtil().setWidth(125),
                                       //height: ScreenUtil().setWidth(75),
@@ -73,10 +73,10 @@ class _TopCategoriesState extends State<TopCategories> {
                                               left: BorderSide(color: Colors.grey.withOpacity(0.5)),
                                               right: BorderSide(color: Colors.grey.withOpacity(0.5)),
                                           ) : Border(
-                                              top: BorderSide(color: prog.Programs[pos]['color']),
-                                              bottom: BorderSide(color: prog.Programs[pos]['color']),
-                                              left: BorderSide(color: prog.Programs[pos]['color']),
-                                              right: BorderSide(color: prog.Programs[pos]['color']),
+                                              top: BorderSide(color: prog.programs[pos]['color']),
+                                              bottom: BorderSide(color: prog.programs[pos]['color']),
+                                              left: BorderSide(color: prog.programs[pos]['color']),
+                                              right: BorderSide(color: prog.programs[pos]['color']),
                                           ),
                                           borderRadius: BorderRadius.all(Radius.circular(20)),
                                       ),

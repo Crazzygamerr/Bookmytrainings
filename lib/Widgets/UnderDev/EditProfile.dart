@@ -1,5 +1,3 @@
-import 'package:Bookmytrainings/Utility/pHp.dart';
-import 'package:Bookmytrainings/Utility/sharedPref.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
@@ -22,6 +20,7 @@ class _EditProfileState extends State<EditProfile> with AutomaticKeepAliveClient
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
 
     TextEditingController nameTextCon = new TextEditingController(text: "${widget.name}");
     TextEditingController emailTextCon = new TextEditingController(text: "${widget.email}");

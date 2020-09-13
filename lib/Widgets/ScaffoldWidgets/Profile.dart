@@ -1,6 +1,5 @@
 import 'package:Bookmytrainings/Screens/LoginScreens.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -23,6 +22,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> with AutomaticKeepAliveClientMixin<Profile> {
   @override
   Widget build(BuildContext context) {
+    super.build(context);
 
     ScreenUtil.init(context, width: 360, height: 640, allowFontScaling: true);
     return Container(
@@ -53,7 +53,7 @@ class _ProfileState extends State<Profile> with AutomaticKeepAliveClientMixin<Pr
                   ),
                 ),
 
-                //TODO: Complete the EditProfile window and add this button
+                // Complete the EditProfile window and add this button
                 /*Container(
                   decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.black.withOpacity(0.4),),
                                 right: BorderSide(color: Colors.black.withOpacity(0.4),),

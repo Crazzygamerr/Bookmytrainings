@@ -1,6 +1,4 @@
 import 'package:Bookmytrainings/Utility/FutureProvider.dart';
-import 'package:Bookmytrainings/Utility/Banner_Model.dart';
-import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:Bookmytrainings/Widgets/Menus/Login.dart';
 import 'package:Bookmytrainings/Widgets/Menus/OTP.dart';
 import 'package:Bookmytrainings/Widgets/Menus/Register.dart';

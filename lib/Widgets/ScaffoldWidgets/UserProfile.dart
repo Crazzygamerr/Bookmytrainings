@@ -97,6 +97,7 @@ class _UserProfileState extends State<UserProfile>{
 
   _showSheet(MediaQueryData m, BuildContext context1, Function func, String name, String email) {
 
+      // ignore: unused_local_variable
       var sheet;
       sheet = showModalBottomSheet(
               isScrollControlled: true,
@@ -221,6 +222,7 @@ class _UserProfileState extends State<UserProfile>{
                                                       top: 0,
                                                       left: 0,
                                                   ),
+                                                  // ignore: todo
                                                   //TODO: Compete the addProfileImage button with a ability to store the image in database
                                                   /*Positioned(
                                                       child: Row(

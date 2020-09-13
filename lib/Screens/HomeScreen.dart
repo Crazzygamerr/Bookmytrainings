@@ -1,8 +1,6 @@
 import 'package:Bookmytrainings/Utility/FutureProvider.dart';
-import 'package:Bookmytrainings/Utility/Banner_Model.dart';
 import 'package:Bookmytrainings/Utility/SignIn.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -54,7 +52,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
         //ScreenUtil.instance = ScreenUtil()..init(context);
         //ScreenUtil.init(context, width: 360, height: 640, allowFontScaling: true)..init(context);
-        MediaQueryData m = MediaQuery.of(context);
         PageController hPageCon = new PageController(initialPage: 0);
         SystemChrome.setEnabledSystemUIOverlays([]);
         SystemChrome.setPreferredOrientations([

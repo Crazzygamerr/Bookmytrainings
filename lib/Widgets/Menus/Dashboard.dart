@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
-import 'package:Bookmytrainings/Widgets/UnderDev/Bookings.dart';
 import 'package:Bookmytrainings/Widgets/HomePageWidgets/HomeBanner.dart';
 
 class Dashboard extends StatefulWidget{

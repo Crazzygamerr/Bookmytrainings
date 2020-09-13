@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:Bookmytrainings/Utility/FutureProvider.dart';
 import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
@@ -33,7 +32,7 @@ class _LoginState extends State<Login> with AutomaticKeepAliveClientMixin {
     SharedPref pref = new SharedPref();
     bool isWriting;
     PageController pageCon;
-    pHp dbConn = new pHp();
+    Php dbConn = new Php();
 
     RegExp mailVal = new RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
 

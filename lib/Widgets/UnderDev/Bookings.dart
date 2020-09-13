@@ -2,8 +2,6 @@ import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:Bookmytrainings/Utility/Booking_Model.dart';
 
@@ -19,13 +17,13 @@ class _HomeBookingsState extends State<HomeBookings>{
 
   String email;
 
-  final _noBookKey = GlobalKey<RefreshIndicatorState>();
-  final _bookedKey = GlobalKey<RefreshIndicatorState>();
+  //final _noBookKey = GlobalKey<RefreshIndicatorState>();
+  // final _bookedKey = GlobalKey<RefreshIndicatorState>();
 
   Future<List<BookingModel>> setB() async {
       SharedPref pref = new SharedPref();
       email = await pref.getEmail();
-      pHp dbConn = new pHp();
+      Php dbConn = new Php();
       return dbConn.getBookings(email);
   }
 
@@ -187,20 +185,6 @@ class _HomeBookingsState extends State<HomeBookings>{
                   }
           ),
       );
-
-  }
-
-  _urlFunc() async{
-      const url = "";
-      if(await canLaunch(url)){
-          await launch(url);
-      } else {
-          Fluttertoast.showToast(msg: "Could not launch url",
-              textColor: Colors.black,
-              fontSize: ScreenUtil().setSp(20),
-              toastLength: Toast.LENGTH_LONG,
-          );
-      }
 
   }
 

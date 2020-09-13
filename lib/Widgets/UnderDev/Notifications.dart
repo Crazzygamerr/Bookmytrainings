@@ -17,9 +17,10 @@ class _NotificationsState extends State<Notifications> {
     @override
     Widget build(BuildContext context) {
 
-        ScreenUtil.init(context, width: 360, height: 640, allowFontScaling: true);MediaQueryData m = MediaQuery.of(context);
+        ScreenUtil.init(context, width: 360, height: 640, allowFontScaling: true);
+        MediaQueryData m = MediaQuery.of(context);
 
-        /*return Container(
+        return Container(
             decoration: BoxDecoration(color: Colors
                     .grey, shape: BoxShape.circle),
             padding: EdgeInsets.all(1),
@@ -42,14 +43,13 @@ class _NotificationsState extends State<Notifications> {
                         ),
                     ]
             ),
-        );*/
-
-        return SizedBox(
-          width: ScreenUtil().setWidth(40),
         );
+
     }
 
     _showSheet(int notifications, MediaQueryData m) {
+
+        // ignore: unused_local_variable
         var sheet;
         sheet = showModalBottomSheet(
                 isScrollControlled: true,

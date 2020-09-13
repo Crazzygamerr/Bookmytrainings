@@ -19,6 +19,7 @@ class _HelpAndFeedbackState extends State<HelpAndFeedback> with AutomaticKeepAli
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
 
   ScreenUtil.init(context, width: 360, height: 640, allowFontScaling: true);
 

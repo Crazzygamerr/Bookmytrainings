@@ -94,7 +94,11 @@ class _AddProfileImageState extends State<AddProfileImage> {
   _imagePick(Function setStr, Function func) async{
 
     String sp;
+    //var picker = new ImagePicker();
+
+    // ignore: deprecated_member_use
     final File image = await ImagePicker.pickImage(source: ImageSource.gallery);
+    // final File ima = await ;
 
     if (image == null) return;
 

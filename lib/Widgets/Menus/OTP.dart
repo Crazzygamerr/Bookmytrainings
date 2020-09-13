@@ -1,10 +1,8 @@
 import 'dart:async';
 
 import 'package:Bookmytrainings/Screens/HomeScreen.dart';
-import 'package:Bookmytrainings/Utility/FutureProvider.dart';
 import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pinput/pin_put/pin_put.dart';
@@ -19,7 +17,7 @@ class OTP extends StatefulWidget {
 class _OTPState extends State<OTP> {
 
   TextEditingController _pinPutController = TextEditingController();
-  pHp dbConn = new pHp();
+  Php dbConn = new Php();
   int _otp, sec;
   Stream otpStream;
   String tempS = '...30';

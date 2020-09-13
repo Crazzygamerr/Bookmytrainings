@@ -27,7 +27,7 @@ class _PaymentsState extends State<Payments> with AutomaticKeepAliveClientMixin<
     Future<List<PaymentModel>> setP() async {
         SharedPref pref = new SharedPref();
         email = await pref.getEmail();
-        pHp dbConn = new pHp();
+        Php dbConn = new Php();
         return dbConn.getPayments(email);
     }
 
@@ -222,7 +222,7 @@ class _PaymentsState extends State<Payments> with AutomaticKeepAliveClientMixin<
                                                                     children: <Widget>[
 
                                                                         Container(
-                                                                          child: Text("Order ID: ${snapshot.data[snapshot.data.length - pos - 1].OrderId}",
+                                                                          child: Text("Order ID: ${snapshot.data[snapshot.data.length - pos - 1].orderId}",
                                                                               style: TextStyle(
                                                                                   fontSize: ScreenUtil().setSp(12),
                                                                                   fontWeight: FontWeight.w400,

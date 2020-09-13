@@ -156,6 +156,12 @@ class BannerModel{
                     Colors.green,
                     Colors.lightGreenAccent,
                 ];
+            
+            default:
+              return <Color>[
+                Colors.orange,
+                Colors.orangeAccent
+              ];
 
         }
     }

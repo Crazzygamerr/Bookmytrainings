@@ -2,14 +2,11 @@ import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:Bookmytrainings/Utility/Booking_Model.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:maps_launcher/maps_launcher.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class MyBookings extends StatefulWidget {
 
@@ -23,7 +20,7 @@ class MyBookings extends StatefulWidget {
 class _MyBookingsState extends State<MyBookings> with AutomaticKeepAliveClientMixin {
 
     PageController bPageCon = new PageController(initialPage: 0, viewportFraction: 0.9);
-    WebViewController _controller;
+    //WebViewController _controller;
     String email;
     List<double> op = List();
     List<StateSetter> setLoading = List();
@@ -31,7 +28,7 @@ class _MyBookingsState extends State<MyBookings> with AutomaticKeepAliveClientMi
     Future<List<BookingModel>> setB() async {
         SharedPref pref = new SharedPref();
         email = await pref.getEmail();
-        pHp dbConn = new pHp();
+        Php dbConn = new Php();
         return dbConn.getBookings(email);
     }
 
@@ -219,7 +216,7 @@ class _MyBookingsState extends State<MyBookings> with AutomaticKeepAliveClientMi
                                                                           Container(
                                                                               width: ScreenUtil().setWidth(360),
                                                                               alignment: Alignment.centerLeft,
-                                                                              child: Text("Booking ID: ${snapshot.data[snapshot.data.length - pos - 1].booking_id}",
+                                                                              child: Text("Booking ID: ${snapshot.data[snapshot.data.length - pos - 1].bookingId}",
                                                                                   style: TextStyle(fontSize: ScreenUtil().setSp(12), fontWeight: FontWeight.w400),
                                                                                   textAlign: TextAlign.start,
                                                                               ),

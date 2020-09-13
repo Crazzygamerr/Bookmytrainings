@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/screenutil.dart';
@@ -33,6 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
       //loadBanners = await FirebaseFirestore.instance.collection("Banners").orderBy("id").snapshots();
       SharedPref pref = new SharedPref();
       bool b = await pref.getUserLogin();
+      // ignore: unused_local_variable
       var abc = await Future.delayed(Duration(seconds: 3)).then((value) => (){
           return null;
       });

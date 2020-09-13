@@ -1,4 +1,3 @@
-import 'package:Bookmytrainings/Utility/FutureProvider.dart';
 import 'package:Bookmytrainings/Utility/Banner_Model.dart';
 import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -19,7 +18,7 @@ class HomeBanner extends StatefulWidget{
 
 class _HomeBannerState extends State<HomeBanner> with SingleTickerProviderStateMixin {
 
-  pHp dbConn = new pHp();
+  Php dbConn = new Php();
   bool anim = false;
 
   @override

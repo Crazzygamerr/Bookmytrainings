@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:Bookmytrainings/Utility/FutureProvider.dart';
 import 'package:Bookmytrainings/Utility/pHp.dart';
 import 'package:Bookmytrainings/Utility/sharedPref.dart';
@@ -35,7 +34,7 @@ class _RegisterState extends State<Register> with AutomaticKeepAliveClientMixin 
     SharedPref pref = new SharedPref();
     bool isWriting1,isWriting2,isWriting3;
     PageController pageCon;
-    pHp dbConn = new pHp();
+    Php dbConn = new Php();
 
     RegExp nameVal = new RegExp(r"[A-Za-z0-9@$!%*#?&]{8,}$");
     RegExp passVal = new RegExp(r"^(?=.*?[a-z])[A-Za-z0-9@$!%*#?&]{8,}$");
