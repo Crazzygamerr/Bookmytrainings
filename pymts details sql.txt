@@ -1,0 +1,19 @@
+SELECT leadid FROM `vtiger_leaddetails` where email=
+SELECT cf_765, cf_775 FROM `vtiger_leadscf` where leadid=46825
+
+
+direct booking n payment tarun dhawan
+SELECT ide,id(booking id) 9220 FROM `jos_rseventspro_users` where email=
+SELECT id FROM `jos_sem_pg_history` where booking id = 9220
+
+SELECT * FROM `jos_rseventspro_users`, `jos_sem_pg_history` where booking_id = id and email='tarundhawan24@gmail.com'
+
+generic pymt
+stephen dwouza
+get txn id (booking id) 6718 and order id(txn id)  from generic_pymt_txns email=stephenatdouza@gmail.com
+pg history
+
+
+SELECT h.txn_id,h.txn_datetime,h.amount,t.currency FROM `jos_rseventspro_users` u, `jos_sem_pg_history` h, jos_rseventspro_tickets t where h.booking_id = u.id and u.email='tarundhawan24@gmail.com' and t.ide=u.ide
+
+SELECT p.txn_id,u.name,p.txn_datetime,p.amount,t.currency,p.txn_status FROM `jos_rseventspro_users` u, `jos_sem_pg_history` p, `jos_rseventspro_tickets` t,`jos_rseventspro_events` e where p.booking_id = u.id and t.ide=u.ide and e.id=u.ide

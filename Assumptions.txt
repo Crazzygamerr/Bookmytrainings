@@ -1,0 +1,12 @@
+
+--jos_users does not contain duplicate email id,
+if so, then change methods in getUser.php
+
+-- Payments other than BMT in 'generic_payment_txns'
+
+-- Payments without title and comments in 'generic_payment_txns'
+
+-- No dialog for editing phone number, 
+you have to retrieve and change 
+it in all payments in 'generic_payment_txns'
+

@@ -1,0 +1,6 @@
+-- Payment design change due to payment made in parts,
+and it was not according to event.
+
+-- Removed duration from bookings design,
+as multiple referencing was required and,
+only start and end date was provided in 'jos_rseventspro_events'
