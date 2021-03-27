@@ -289,7 +289,7 @@ class _RegisterState extends State<Register> with AutomaticKeepAliveClientMixin 
                                                     hintText: "Enter your password",
                                                 ),
                                                 inputFormatters: [
-                                                    FilteringTextInputFormatter.deny(";%")
+                                                      
                                                 ],
                                             ),
                                         ),
