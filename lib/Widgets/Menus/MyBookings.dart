@@ -461,9 +461,9 @@ class _MyBookingsState extends State<MyBookings> with AutomaticKeepAliveClientMi
     }
 
     _urlFunc(String url) async{
-        if(await canLaunch("$url")){
+        try {
             await launch("$url");
-        } else {
+        } catch(e) {
             Fluttertoast.showToast(msg: "Could not perform action",
                 textColor: Colors.black,
                 fontSize: ScreenUtil().setSp(20),

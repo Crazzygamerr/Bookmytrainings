@@ -1,7 +1,7 @@
 name: Bookmytrainings
 description: A new Flutter project.
 
-version: 1.0.0+11
+version: 1.0.0+12
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -16,16 +16,11 @@ dependencies:
   image_picker: ^0.6.7+7
   path_provider: ^1.6.11
   shared_preferences: ^0.5.10
-  http: 0.12.1
+  http: ^0.12.1
   cupertino_icons: ^0.1.2
   intl: ^0.16.1
-<<<<<<< Updated upstream
-  share: ^0.6.4+3
-  app_review: ^1.1.2
-=======
   share: ^0.6.5+4
   app_review: ^2.0.1
->>>>>>> Stashed changes
   maps_launcher: ^1.2.0
   firebase_core: ^0.5.0
   firebase_auth: ^0.18.0+1

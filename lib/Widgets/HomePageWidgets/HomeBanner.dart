@@ -286,9 +286,9 @@ class _HomeBannerState extends State<HomeBanner> with SingleTickerProviderStateM
   }
 
   _urlFunc(String url) async{
-      if(await canLaunch(url)){
+      try{
           await launch(url);
-      } else {
+      } catch(e) {
           Fluttertoast.showToast(msg: "Could not perform action: launch url",
               textColor: Colors.black,
               fontSize: ScreenUtil().setSp(20),

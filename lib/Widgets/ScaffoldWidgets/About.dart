@@ -137,9 +137,9 @@ class _AboutBMTState extends State<AboutBMT> with AutomaticKeepAliveClientMixin<
     }
 
     _urlFunc(String url, String s) async{
-      if(await canLaunch("$s$url")){
+      try {
         await launch("$s$url");
-      } else {
+      } catch(e) {
         Fluttertoast.showToast(msg: "Could not perform action",
           textColor: Colors.black,
           fontSize: ScreenUtil().setSp(20),
